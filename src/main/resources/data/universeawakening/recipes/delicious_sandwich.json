@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "bab",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:bread"
+    },
+
+    "b":
+    {
+      "item": "minecraft:steak"
+    },
+
+    "a":
+    {
+      "item": "minecraft:dirt"
+    }
+
+  },
+  "result":
+  {
+    "item": "universeawakening:delicious_sandwich",
+    "count": 2
+  }
+
+
+}
