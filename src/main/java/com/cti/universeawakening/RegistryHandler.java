@@ -5,10 +5,11 @@ import com.cti.universeawakening.Blocks.CopperOre;
 import com.cti.universeawakening.Items.DeliciousSandwich;
 import com.cti.universeawakening.Items.ItemBase;
 import com.cti.universeawakening.Items.ItemModRecord;
+
 import com.cti.universeawakening.Tools.ModItemTier;
-import net.minecraft.block.*;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
+//import net.minecraft.block;
+//import net.minecraft.block.SoundType;
+//import net.minecraft.block.material.Material;
 import net.minecraft.item.*;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.Item.Properties;
@@ -19,7 +20,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryManager;
-import net.minecraft.resources.VanillaPack;
+//import net.minecraft.resources.VanillaPack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -35,7 +36,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.stream.Collectors;
-import net.minecraft.block.material.Material;
+//import net.minecraft.block.material.Material;
 import net.minecraftforge.energy.IEnergyStorage;
 
 
@@ -56,9 +57,9 @@ public class RegistryHandler {
     public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget", ItemBase::new);
     public static final RegistryObject<DeliciousSandwich> DELICIOUS_SANDWICH = ITEMS.register("delicious_sandwich", DeliciousSandwich::new);
     //Reccords and other goodies
-    public static final Item recordCraft1 = new ItemModRecord(1, .ModSounds.ctiRecord1, .unstackable());
+    //public static final Item recordCraft1 = new ItemModRecord(1, .ModSounds.ctiRecord1, .unstackable());
 
-
+    public static final RegistryObject<Item> LIGHTONIUM_INGOT = ITEMS.register("lightonium_ingot", ItemBase::new);
 
     public static final RegistryObject<Item> COPPER_INGOT = ITEMS.register("copper_ingot", ItemBase::new);
 
@@ -70,6 +71,9 @@ public class RegistryHandler {
             new SwordItem(ModItemTier.COPPER, 3, -2.5f, new Item.Properties().group(universeawakening.TAB))
             );
 
+    public static final RegistryObject<SwordItem> LIGHTONIAN_SWORD = ITEMS.register("lightonian_sword", () ->
+            new SwordItem(ModItemTier.LIGHTONIUM, 98100, -2.5f, new Item.Properties().group(universeawakening.TAB)));
+    ;
 
 //BlOCKS
 

@@ -9,9 +9,18 @@ import java.util.function.Supplier;
 public enum ModItemTier implements IItemTier{
 
 
+    /**
+     * Item Tier Registry
+     * Adds ALL Item Tiers for tools.
+     * Poppy is the spy
+     */
     COPPER(2, 1024, 10f, 5.0f, 17, () -> {
 
         return Ingredient.fromItems(RegistryHandler.COPPER_SWORD.get());
+    };
+
+    LIGHTONIUM(256,  271828182, 2048f, 5120f, 188, () -> {
+        return Ingredient.fromItems(RegistryHandler.LIGHTONIAN_SWORD.get());
     }
     );
 
