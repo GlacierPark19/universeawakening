@@ -1,11 +1,12 @@
 {
-   "item.universeawakening.CopperNugget": "Copper Nugget",
-    "itemGroup.universeawakening": "Universe Awakening",
-  "item.universeawakening.CopperIngot": "Copper Ingot",
+   "item.universeawakening.copper_nugget": "Copper Nugget",
+    "itemGroup.UniverseAwakening": "Universe Awakening",
+  "item.universeawakening.copper_ingot": "Copper Ingot",
   "item.universeawakening.copper_sword": "Copper Sword",
-  "block.universeawakening.CopperOre": "Copper Ore",
-  "block.universeawakening.CopperBlock": "Block of Copper",
-  "block.universeawakening.lightonian_pyramid": "Lightonian Pyramid"
+  "block.universeawakening.copper_ore": "Copper Ore",
+  "block.universeawakening.copper_block": "Block of Copper",
+  "item.universeawakening.lightonian_sword": "Lightonian Sword"
+
 }
 
 

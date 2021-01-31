@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures":{
+    "layer0": "universeawakening:items/lightonian_sword"
+  }
+}
