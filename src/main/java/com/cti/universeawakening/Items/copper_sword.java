@@ -1,4 +1,4 @@
-package com.cti.universeawakening;
+package com.cti.universeawakening.Items;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.SwordItem;

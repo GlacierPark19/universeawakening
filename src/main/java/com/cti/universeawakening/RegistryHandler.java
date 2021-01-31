@@ -75,7 +75,7 @@ public class RegistryHandler {
 
     public static final RegistryObject<SwordItem> LIGHTONIAN_SWORD = ITEMS.register("lightonian_sword", () ->
             new SwordItem(LightoniumTier.LIGHTONIUM, 98100, -2.5f, new Item.Properties().group(universeawakening.TAB)));
-    ;
+
 
 //BlOCKS
 

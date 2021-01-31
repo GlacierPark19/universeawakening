@@ -30,7 +30,7 @@ public enum LightoniumTier implements IItemTier {
     private final Supplier<Ingredient> repairMaterial;
 
 
-    ;
+
 
     LightoniumTier(int harvestLevel, int maxUses, float efficiency, float attackDamage, int enchantability, Supplier<Ingredient> repairMaterial ) {
         this.harvestLevel = harvestLevel;

@@ -2,6 +2,7 @@ package com.cti.universeawakening.Items;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.SwordItem;
+import com.cti.universeawakening.Tools.LightoniumTier;
 
 public class lightonian_sword extends SwordItem {
 
