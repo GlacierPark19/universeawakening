@@ -17,12 +17,9 @@ public enum ModItemTier implements IItemTier{
     COPPER(2, 1024, 10f, 5.0f, 17, () -> {
 
         return Ingredient.fromItems(RegistryHandler.COPPER_SWORD.get());
-    };
+    });
 
-    LIGHTONIUM(256,  271828182, 2048f, 5120f, 188, () -> {
-        return Ingredient.fromItems(RegistryHandler.LIGHTONIAN_SWORD.get());
-    }
-    );
+
 
     private final int harvestLevel;
     private final int maxUses;
@@ -74,3 +71,8 @@ public enum ModItemTier implements IItemTier{
         return repairMaterial.get();
     }
 }
+
+
+
+
+

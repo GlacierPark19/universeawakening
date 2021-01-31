@@ -6,10 +6,12 @@ import com.cti.universeawakening.Items.DeliciousSandwich;
 import com.cti.universeawakening.Items.ItemBase;
 import com.cti.universeawakening.Items.ItemModRecord;
 
+import com.cti.universeawakening.Tools.LightoniumTier;
 import com.cti.universeawakening.Tools.ModItemTier;
 //import net.minecraft.block;
 //import net.minecraft.block.SoundType;
 //import net.minecraft.block.material.Material;
+import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.Item.Properties;
@@ -72,7 +74,7 @@ public class RegistryHandler {
             );
 
     public static final RegistryObject<SwordItem> LIGHTONIAN_SWORD = ITEMS.register("lightonian_sword", () ->
-            new SwordItem(ModItemTier.LIGHTONIUM, 98100, -2.5f, new Item.Properties().group(universeawakening.TAB)));
+            new SwordItem(LightoniumTier.LIGHTONIUM, 98100, -2.5f, new Item.Properties().group(universeawakening.TAB)));
     ;
 
 //BlOCKS
