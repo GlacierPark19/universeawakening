@@ -4,7 +4,6 @@ import com.cti.universeawakening.Blocks.CopperBlock;
 import com.cti.universeawakening.Blocks.CopperOre;
 import com.cti.universeawakening.Items.DeliciousSandwich;
 import com.cti.universeawakening.Items.ItemBase;
-import com.cti.universeawakening.Items.ItemModRecord;
 
 import com.cti.universeawakening.Tools.LightoniumTier;
 import com.cti.universeawakening.Tools.ModItemTier;
@@ -14,33 +13,13 @@ import com.cti.universeawakening.Tools.ModItemTier;
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraft.item.SwordItem;
-import net.minecraft.item.Item.Properties;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.SoundEvent;
-import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryManager;
 //import net.minecraft.resources.VanillaPack;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.InterModComms;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
-import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
-import java.util.stream.Collectors;
 //import net.minecraft.block.material.Material;
-import net.minecraftforge.energy.IEnergyStorage;
-
 
 
 public class RegistryHandler {
