@@ -51,7 +51,8 @@ public class RegistryHandler {
     public static final RegistryObject<SwordItem> COPPER_SWORD = ITEMS.register("copper_sword", () ->
             new SwordItem(ModItemTier.COPPER, 3, -2.5f, new Item.Properties().group(universeawakening.TAB))
             );
-
+    public static final RegistryObject<AxeItem> LIGHONIAN_AXE = ITEMS.register("lightonian_axe", () ->
+            new AxeItem(LightoniumTier.LIGHTONIUM, 13, -1.7f, new Item.Properties().group(universeawakening.TAB)));
     public static final RegistryObject<SwordItem> LIGHTONIAN_SWORD = ITEMS.register("lightonian_sword", () ->
             new SwordItem(LightoniumTier.LIGHTONIUM, 98100, -2.5f, new Item.Properties().group(universeawakening.TAB)));
     public static final RegistryObject<PickaxeItem> LIGHTONIAN_PICKAXE = ITEMS.register("lightonian_pickaxe", () ->
