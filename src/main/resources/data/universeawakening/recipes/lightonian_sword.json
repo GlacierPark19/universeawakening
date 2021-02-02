@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "u",
+        "u",
+        "/"
+    ],
+    "key": {
+        "u": {
+            "item": "universeawakening:lightonium_ingot"
+        },
+        "/": {
+            "item": "minecraft:end_rod"
+        }
+    },
+    "result": {
+        "item": "universeawakening:lightonian_sword",
+        "count": 1
+    }
+}
