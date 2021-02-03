@@ -52,7 +52,7 @@ public class initGen {
     }
 
     public static void addFeatureToBiome(Biome biome, GenerationStage.Decoration decoration, ConfiguredFeature<?, ?> configuredFeature) {
-        List<Supplier<ConfiguredFeature<?, ?>>> biomeFeatures = new ArrayList<>(
+        List<Supplier<ConfiguredFeature<?, ?>>> biomeFeatures = new ArrayList<E>(
                 biome.func_242440_e().func_242498_c() /* List of Configured Features */
         );
 
@@ -62,9 +62,9 @@ public class initGen {
 
         List<Supplier<ConfiguredFeature<?, ?>>> features = new ArrayList<>(biomeFeatures.get(decoration.ordinal()));
         features.add(() -> configuredFeature);
-        biomeFeatures.set(decoration.ordinal(), features);
+        biomeFeatures.set(decoration.ordinal(), (Supplier<ConfiguredFeature<?, ?>>) features);
 
         /* Change field_242484_f that contains the Configured Features of the Biome*/
         ObfuscationReflectionHelper.setPrivateValue(BiomeGenerationSettings.class, biome.func_242440_e(), biomeFeatures, "field_242484_f");
     }}
-}
+
