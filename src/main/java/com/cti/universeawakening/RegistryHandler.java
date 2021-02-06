@@ -13,6 +13,8 @@ import com.cti.universeawakening.Tools.ModItemTier;
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraft.item.SwordItem;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -68,7 +70,21 @@ public class RegistryHandler {
 public static final RegistryObject<Item> COPPER_BLOCK_ITEM = ITEMS.register("copper_block",() -> new BlockItemBase(COPPER_BLOCK.get()));
 public static final RegistryObject<Item> COPPER_ORE_ITEM = ITEMS.register("copper_ore", () -> new BlockItemBase(COPPER_ORE.get()));
 
+
+
+
+//random crap I added BC I'm insane
+
+    ResourceLocation location = new ResourceLocation("universeawakening", "why");
+    SoundEvent event = new SoundEvent(location);
+
+
+
+
+
+
 }
+
 
 
 

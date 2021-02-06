@@ -1,4 +1,6 @@
 {
-
-  "music.ctiRecord1": { "sounds":[{"name": "universeawakening:music/ctiRecord1", "stream": true}] }
-}
+  "THX_Lightning": {
+    "category": "player",
+    "subtitle": "universeawakening.subtitle.why",
+    "sounds": [ "universeawakening:why" ]
+  },
