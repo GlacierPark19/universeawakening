@@ -2,6 +2,7 @@ package com.cti.universeawakening;
 import com.cti.universeawakening.Blocks.BlockItemBase;
 import com.cti.universeawakening.Blocks.CopperBlock;
 import com.cti.universeawakening.Blocks.CopperOre;
+import com.cti.universeawakening.Items.DarkCurrry;
 import com.cti.universeawakening.Items.DeliciousSandwich;
 import com.cti.universeawakening.Items.ItemBase;
 
@@ -20,7 +21,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 //import net.minecraft.resources.VanillaPack;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-
+import com.cti.universeawakening.Items.DarkCurrry;
 //import net.minecraft.block.material.Material;
 
 
@@ -41,7 +42,7 @@ public class RegistryHandler {
     public static final RegistryObject<DeliciousSandwich> DELICIOUS_SANDWICH = ITEMS.register("delicious_sandwich", DeliciousSandwich::new);
     //Reccords and other goodies
     //public static final Item recordCraft1 = new ItemModRecord(1, .ModSounds.ctiRecord1, .unstackable());
-
+    public static final RegistryObject<DarkCurrry> DARK_CURRRY = ITEMS.register("dark_curry", DarkCurrry::new);
     public static final RegistryObject<Item> LIGHTONIUM_INGOT = ITEMS.register("lightonium_ingot", ItemBase::new);
 
     public static final RegistryObject<Item> COPPER_INGOT = ITEMS.register("copper_ingot", ItemBase::new);

@@ -1,6 +1,13 @@
 {
-  "THX_Lightning": {
+  "thx": {
     "category": "player",
     "subtitle": "universeawakening.subtitle.why",
     "sounds": [ "universeawakening:why" ]
   },
+  "poyo": {
+    "category": "item",
+    "subtitle": "universeawakening.subtitle.poyo",
+    "sounds": ["universeawakening:poyo" ]
+  }
+
+}
