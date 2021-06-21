@@ -64,7 +64,7 @@ public class RegistryHandler {
 //BlOCKS
 
     public static final RegistryObject<Block> COPPER_ORE = BLOCKS.register("copper_ore", CopperOre::new);
-
+    public static final RegistryObject<Block> RAW_LIGHTONIUM_ORE = BLOCKS.register("raw_lightonium_ore", RawLightoniumOre::new);
     public static final RegistryObject<Block> COPPER_BLOCK = BLOCKS.register("copper_block", CopperBlock::new);
 
 //BLOCK-ITEMS
