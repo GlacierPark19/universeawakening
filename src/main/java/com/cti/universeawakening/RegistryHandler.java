@@ -2,6 +2,7 @@ package com.cti.universeawakening;
 import com.cti.universeawakening.Blocks.BlockItemBase;
 import com.cti.universeawakening.Blocks.CopperBlock;
 import com.cti.universeawakening.Blocks.CopperOre;
+import com.cti.universeawakening.Blocks.RawLightoniumOre;
 import com.cti.universeawakening.Items.DarkCurrry;
 import com.cti.universeawakening.Items.DeliciousSandwich;
 import com.cti.universeawakening.Items.ItemBase;

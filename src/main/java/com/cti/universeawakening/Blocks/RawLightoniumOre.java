@@ -7,7 +7,7 @@ import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 
 public class RawLightoniumOre extends OreBlock {
-    public CopperOre() {
+    public RawLightoniumOre() {
 
         super(Properties.create(Material.IRON)
                 .hardnessAndResistance(7.5f, 6.9f)
