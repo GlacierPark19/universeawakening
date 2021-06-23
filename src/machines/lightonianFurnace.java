@@ -1,5 +1,6 @@
 package com.cti.universeawakening.crafting.machines;
 
+//import com.cti.universeawakening.tiles.lightonianFurnaceTileEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.FurnaceBlock;
 import net.minecraft.entity.player.PlayerEntity;
@@ -37,4 +38,4 @@ public class lightonianFurnace extends FurnaceBlock {
     }
 }
 
-}
+

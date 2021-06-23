@@ -1,5 +1,6 @@
 package com.cti.universeawakening.tiles;
 
+import com.cti.universeawakening.server.LightonianFurnaceServerConfig;
 import net.minecraft.block.AbstractFurnaceBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemStack;
@@ -13,13 +14,13 @@ import net.minecraft.util.math.MathHelper;
 
 import javax.annotation.Nullable;
 
-public abstract class AbstractBrickFurnaceTileEntity extends AbstractFurnaceTileEntity {
+public abstract class AbstractLightonianFurnaceTile extends AbstractFurnaceTileEntity {
 
     protected final IRecipeType<? extends AbstractCookingRecipe> specificRecipeType;
 
-    public AbstractBrickFurnaceTileEntity(TileEntityType<?> tileTypeIn,
-                                          IRecipeType<? extends AbstractCookingRecipe> specificRecipeTypeIn,
-                                          IRecipeType<? extends AbstractCookingRecipe> vanillaRecipeTypeIn) {
+    public AbstractLightonianFurnaceTile(TileEntityType<?> tileTypeIn,
+                                         IRecipeType<? extends AbstractCookingRecipe> specificRecipeTypeIn,
+                                         IRecipeType<? extends AbstractCookingRecipe> vanillaRecipeTypeIn) {
         super(tileTypeIn, vanillaRecipeTypeIn);
         this.specificRecipeType = specificRecipeTypeIn;
     }
@@ -144,7 +145,7 @@ public abstract class AbstractBrickFurnaceTileEntity extends AbstractFurnaceTile
         } else if (this.specificRecipeType.getClass().isInstance(rec.getType())) {
             return rec.getCookTime();
         }
-        return (int) (rec.getCookTime() * ServerConfig.COOK_TIME_FACTOR.get());
+        return (int) (rec.getCookTime() * LightonianFurnaceServerConfig.COOK_TIME_FACTOR.get());
     }
 
     protected AbstractCookingRecipe getRecipe() {
@@ -158,9 +159,9 @@ public abstract class AbstractBrickFurnaceTileEntity extends AbstractFurnaceTile
             AbstractCookingRecipe rec = null;
             if (this.world != null) {
                 rec = this.world.getRecipeManager().getRecipe(this.specificRecipeType, this, this.world).orElse(null);
-                if (rec == null && ServerConfig.VANILLA_RECIPES_ENABLED.get()) {
+                if (rec == null && LightonianFurnaceServerConfig.VANILLA_RECIPES_ENABLED.get()) {
                     rec = this.world.getRecipeManager().getRecipes(this.recipeType, this, this.world)
-                            .stream().filter(abstractCookingRecipe -> ServerConfig.isRecipeNotBlacklisted(abstractCookingRecipe.getId())).findFirst().orElse(null);
+                            .stream().filter(abstractCookingRecipe -> LightonianFurnaceServerConfig.isRecipeNotBlacklisted(abstractCookingRecipe.getId())).findFirst().orElse(null);
                 }
             }
             if (rec == null) {

@@ -15,6 +15,8 @@ import com.cti.universeawakening.Tools.ModItemTier;
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraft.item.SwordItem;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.fml.RegistryObject;
@@ -23,6 +25,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 //import net.minecraft.resources.VanillaPack;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import com.cti.universeawakening.Items.DarkCurrry;
+
+import java.util.function.Supplier;
 //import net.minecraft.block.material.Material;
 
 
@@ -71,7 +75,7 @@ public class RegistryHandler {
 //BLOCK-ITEMS
 public static final RegistryObject<Item> COPPER_BLOCK_ITEM = ITEMS.register("copper_block",() -> new BlockItemBase(COPPER_BLOCK.get()));
 public static final RegistryObject<Item> COPPER_ORE_ITEM = ITEMS.register("copper_ore", () -> new BlockItemBase(COPPER_ORE.get()));
-
+public static final RegistryObject<Item> RAW_LIGHTONIUM_ORE_ITEM = ITEMS.register("raw_lightonium_ore", () -> new BlockItemBase(RAW_LIGHTONIUM_ORE.get()));
 
 
 
@@ -80,6 +84,7 @@ public static final RegistryObject<Item> COPPER_ORE_ITEM = ITEMS.register("coppe
     ResourceLocation location = new ResourceLocation("universeawakening", "why");
     SoundEvent event = new SoundEvent(location);
 
+//TILES
 
 
 
