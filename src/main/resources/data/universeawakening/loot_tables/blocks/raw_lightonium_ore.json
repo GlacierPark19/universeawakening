@@ -3,11 +3,11 @@
 	"pools": [
 	{
 		
-		  "rolls": 1,
+		  "rolls": 6,
 		  "entries": [
 			{
 				"type": "minecraft:item",
-				"name": "universeawakening:raw_lightonium_ore"
+				"name": "universeawakening:raw_lightonium_crystal"
 			}
 			     ]
 }

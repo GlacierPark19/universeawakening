@@ -49,9 +49,9 @@ public class RegistryHandler {
     //public static final Item recordCraft1 = new ItemModRecord(1, .ModSounds.ctiRecord1, .unstackable());
     public static final RegistryObject<DarkCurrry> DARK_CURRRY = ITEMS.register("dark_curry", DarkCurrry::new);
     public static final RegistryObject<Item> LIGHTONIUM_INGOT = ITEMS.register("lightonium_ingot", ItemBase::new);
-
+    public static final RegistryObject<Item> LIGHTONIAN_CRYSTAL = ITEMS.register("lighonium_crystal", ItemBase::new);
     public static final RegistryObject<Item> COPPER_INGOT = ITEMS.register("copper_ingot", ItemBase::new);
-
+    public static final RegistryObject<Item> RAW_LIGHTONIUM_CRYSTAL = ITEMS.register("raw_lightonium_crystal", ItemBase::new);
 
 
 //TOOLS

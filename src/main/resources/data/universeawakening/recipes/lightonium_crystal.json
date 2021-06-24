@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:smelting",
+
+    "ingredient": {
+        "item": "universeawakening:raw_lightonium_crystal"
+
+    },
+
+    "result": "universeawakening:lightonium_crystal",
+    "experience": 2.5,
+    "cookingtime": 500
+
+
+
+
+
+
+
+
+}
