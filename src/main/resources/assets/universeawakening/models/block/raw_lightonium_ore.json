@@ -1,8 +1,6 @@
-
-
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-   "all": "universeawakening:block/raw_lightonium_ore"
+    "all": "universeawakening:block/raw_lightonium_ore"
   }
 }
