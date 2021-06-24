@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "all": "universeawakening:items/lightonium_crystal"
+  }
+}
