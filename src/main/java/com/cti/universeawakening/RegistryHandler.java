@@ -7,11 +7,14 @@ import com.cti.universeawakening.Items.DarkCurrry;
 import com.cti.universeawakening.Items.DeliciousSandwich;
 import com.cti.universeawakening.Items.ItemBase;
 
+import com.cti.universeawakening.crafting.lightonian_crafting.lightonian_crafting;
+import com.cti.universeawakening.universeawakening;
 import com.cti.universeawakening.Tools.LightoniumTier;
 import com.cti.universeawakening.Tools.ModItemTier;
 //import net.minecraft.block;
 //import net.minecraft.block.SoundType;
 //import net.minecraft.block.material.Material;
+
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraft.item.SwordItem;
@@ -35,7 +38,7 @@ public class RegistryHandler {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, universeawakening.MODID);
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, universeawakening.MODID);
-
+    public static final DeferredRegister<TileEntityType<?>> TILES_ENTITIES = DeferredRegister.create(ForgeRegistries.TILE_ENTITIES, universeawakening.MODID);
     public static void init() {
         // attach DeferredRegister to the event bus
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
@@ -71,12 +74,12 @@ public class RegistryHandler {
     public static final RegistryObject<Block> COPPER_ORE = BLOCKS.register("copper_ore", CopperOre::new);
     public static final RegistryObject<Block> RAW_LIGHTONIUM_ORE = BLOCKS.register("raw_lightonium_ore", RawLightoniumOre::new);
     public static final RegistryObject<Block> COPPER_BLOCK = BLOCKS.register("copper_block", CopperBlock::new);
-
+    public static final RegistryObject<Block> LIGHTONIAN_CRAFTING_TABLE = BLOCKS.register("lightonian_crafting_table", lightonian_crafting::new);
 //BLOCK-ITEMS
 public static final RegistryObject<Item> COPPER_BLOCK_ITEM = ITEMS.register("copper_block",() -> new BlockItemBase(COPPER_BLOCK.get()));
 public static final RegistryObject<Item> COPPER_ORE_ITEM = ITEMS.register("copper_ore", () -> new BlockItemBase(COPPER_ORE.get()));
 public static final RegistryObject<Item> RAW_LIGHTONIUM_ORE_ITEM = ITEMS.register("raw_lightonium_ore", () -> new BlockItemBase(RAW_LIGHTONIUM_ORE.get()));
-
+public static final RegistryObject<Item> LIGHTONIAN_CRAFTING_TABLE_ITEM = ITEMS.register("lightonian_crafting_table", () -> new BlockItemBase(LIGHTONIAN_CRAFTING_TABLE.get()));
 
 
 //random crap I added BC I'm insane
@@ -85,10 +88,6 @@ public static final RegistryObject<Item> RAW_LIGHTONIUM_ORE_ITEM = ITEMS.registe
     SoundEvent event = new SoundEvent(location);
 
 //TILES
-
-
-
-
 
 }
 
