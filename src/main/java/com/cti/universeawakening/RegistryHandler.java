@@ -43,6 +43,7 @@ public class RegistryHandler {
         // attach DeferredRegister to the event bus
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        TILES_ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
     // register item
@@ -70,7 +71,7 @@ public class RegistryHandler {
             new PickaxeItem(LightoniumTier.LIGHTONIUM, 5, -1, new Item.Properties().group(universeawakening.TAB)));
 
 //BlOCKS
-
+    public static final RegistryObject<Block> FUSION_BLOCK = BLOCKS.register("fusion_block", )
     public static final RegistryObject<Block> COPPER_ORE = BLOCKS.register("copper_ore", CopperOre::new);
     public static final RegistryObject<Block> RAW_LIGHTONIUM_ORE = BLOCKS.register("raw_lightonium_ore", RawLightoniumOre::new);
     public static final RegistryObject<Block> COPPER_BLOCK = BLOCKS.register("copper_block", CopperBlock::new);
@@ -80,7 +81,7 @@ public static final RegistryObject<Item> COPPER_BLOCK_ITEM = ITEMS.register("cop
 public static final RegistryObject<Item> COPPER_ORE_ITEM = ITEMS.register("copper_ore", () -> new BlockItemBase(COPPER_ORE.get()));
 public static final RegistryObject<Item> RAW_LIGHTONIUM_ORE_ITEM = ITEMS.register("raw_lightonium_ore", () -> new BlockItemBase(RAW_LIGHTONIUM_ORE.get()));
 public static final RegistryObject<Item> LIGHTONIAN_CRAFTING_TABLE_ITEM = ITEMS.register("lightonian_crafting_table", () -> new BlockItemBase(LIGHTONIAN_CRAFTING_TABLE.get()));
-
+public
 
 //random crap I added BC I'm insane
 
@@ -89,6 +90,8 @@ public static final RegistryObject<Item> LIGHTONIAN_CRAFTING_TABLE_ITEM = ITEMS.
 
 //TILES
 
+
+    public static final RegistryObject<TileE>
 }
 
 
